@@ -51,22 +51,18 @@ export default function Footer() {
 					</p>
 				</div>
 				<div className="flex flex-col gap-2 w-full">
-					<h4 className="text-lg font-semibold">Community</h4>
+					<h4 className="text-lg font-semibold">About Us</h4>
 					<p className="text-xs md:text-sm font-light text-neutral-400">
-						Work Team
+						Who are we
 					</p>
 					<p className="text-xs md:text-sm font-light text-neutral-400">
-						Volunteers
+						Media
 					</p>
 					<p className="text-xs md:text-sm font-light text-neutral-400">
-						Speaker
+						Job
 					</p>
-					<p className="text-xs md:text-sm font-light text-neutral-400">
-						Recruitment
-					</p>
-					<p className="text-xs md:text-sm font-light text-neutral-400">
-						Be a contributor
-					</p>
+					
+					
 				</div>
 				<div className="flex flex-col gap-2  w-full">
 					<h4 className="text-lg font-semibold">Contact</h4>

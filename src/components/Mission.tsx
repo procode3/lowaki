@@ -24,11 +24,28 @@ export default function Mission() {
 		scrollYProgress.on("change", (e) => console.log(e));
 	});
 	const mission =
-		"At Lowaki we're on a mission to revolutionalize the way communities access and embrace clean energy solution At Lowaki we're on a mission to revolutionalize the way communities access and embrace clean energy solution";
+		"We are dedicated to advancing the uptake of clean energy solutions in rural Africa through innovative technology and community-driven initiatives. By empowering women and youth as agents of change, we aim to foster a sustainable and inclusive future for all.";
 	const words = mission.split(" ");
 	return (
-		<div className="container flex flex-col justify-between p-5 sm:p-10 lg:p-20 ">
-			<div className="h-[30vh] w-full"></div>
+		<div className="container flex flex-col gap-10 justify-between p-5 sm:p-10 lg:p-20 ">
+			{/* <div className="h-[30vh] w-full"></div> */}
+			<div className="flex flex-col md:flex-row w-full items-start gap-2 ">
+				<motion.p
+					ref={intro}
+					className="text-[4vw] md:text-[30px] text-start w-full md:w-1/3 leading-tight text-neutral-700 md:py-0 "
+					// style={{ opacity: scrollYProgress }}
+				>
+					Our Vision
+				</motion.p>
+				<motion.p
+					ref={intro}
+					className="flex flex-wrap text-[7vw] md:text-[24px] w-full leading-tight text-neutral-900 md:py-0 "
+				>
+					To be Sub-Saharan Africa&apos;s top green solutions aggregator, providing
+					accessible, innovative clean energy solutions that empower
+					communities.
+				</motion.p>
+			</div>
 			<div className="flex flex-col md:flex-row w-full items-start gap-2 ">
 				<motion.p
 					ref={intro}
@@ -39,25 +56,12 @@ export default function Mission() {
 				</motion.p>
 				<motion.p
 					ref={intro}
-					className="flex flex-wrap text-[7vw] md:text-[40px] w-full leading-tight text-neutral-900 md:py-0 "
+					className="flex flex-wrap text-[7vw] md:text-[24px] w-full leading-tight text-neutral-900 md:py-0 "
 				>
-					{words.map((word, index) => {
-						const start = index / words.length;
-						const end = start + 1 / words.length;
-						return (
-							<Word
-								key={index}
-								range={[start, end]}
-								progress={scrollYProgress}
-								className="mr-2 leading-["
-							>
-								{word}
-							</Word>
-						);
-					})}
+					{mission}
 				</motion.p>
 			</div>
-			<div className="h-[30vh] w-full"></div>
+			{/* <div className="h-[30vh] w-full"></div> */}
 		</div>
 	);
 }

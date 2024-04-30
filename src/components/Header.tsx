@@ -1,11 +1,23 @@
+import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
 export default function Header() {
 	return (
-		<div className="fixed top-0 w-full flex items-center justify-between h-[70px] px-10 bg-black bg-opacity-30 text-white backdrop-blur-xl z-10">
-			<div className="logo">LOWAKI ECO-SOLUTIONS</div>
-			<div className="nav-links flex justify-center items-center ">
+		<div className="fixed top-0 w-full flex items-center justify-between h-[70px] px-10  text-neutral-900 backdrop-blur-xl z-10">
+			<div className="flex gap-5 items-center">
+				<div className="logo h-[50px] w-[50px] relative ">
+					<Image
+						src="/logo.png"
+						alt="lowaki solutions logo"
+						fill={true}
+						style={{ objectFit: "contain" }}
+					/>
+				</div>
+				<h1 className=""> LOWAKI ECO-SOLUTIONS</h1>
+			</div>
+
+			<div className="hidden lg:flex nav-links justify-center items-center ">
 				<Link
 					href="#"
 					className="home mr-10 text-sm font-medium filter mix-blend-difference"
@@ -22,13 +34,19 @@ export default function Header() {
 					href="#"
 					className="home mr-10 text-sm font-medium filter mix-blend-difference"
 				>
-					Projects
+					Partners
 				</Link>
 				<Link
 					href="#"
 					className="home mr-10 text-sm font-medium filter mix-blend-difference"
 				>
-					Products
+					Program
+				</Link>
+				<Link
+					href="#"
+					className="home mr-10 text-sm font-medium filter mix-blend-difference"
+				>
+					Gallery
 				</Link>
 				<Link
 					href="#"
@@ -37,7 +55,7 @@ export default function Header() {
 					Contact
 				</Link>
 			</div>
-			<div className="home text-sm font-semibold px-3 py-2 bg-green-600 text-black rounded-full">
+			<div className="home text-sm font-medium px-3 py-2 bg-green-700 text-white rounded-lg">
 				Get Started
 			</div>
 		</div>

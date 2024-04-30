@@ -5,6 +5,7 @@ import { DM_Sans } from "next/font/google";
 import Mission from "@/components/Mission";
 import Footer from "@/components/Footer";
 import Statistics from "@/components/Statistics";
+import Pillars from "@/components/Pillars";
 
 const dmsans = DM_Sans({
   weight: ["100","200", "300","400", "500", "600", "700", "800"],
