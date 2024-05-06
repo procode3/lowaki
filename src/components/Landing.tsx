@@ -38,7 +38,7 @@ export default function Landing() {
 					<div className="flex my-6 gap-5">
 						<Link
 							href="/register"
-							className="bg-green-700 p-2 rounded-lg w-[100px] text-sm text-center text-neutral-100 hover:text-white font-semibold"
+							className="bg-green-700 px-3 py-2 rounded-lg max-w-[150px] text-sm text-center text-neutral-100 hover:text-white font-semibold"
 						>
 							Contact Us
 						</Link>
