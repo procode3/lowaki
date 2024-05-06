@@ -6,23 +6,25 @@ import Mission from "@/components/Mission";
 import Footer from "@/components/Footer";
 import Statistics from "@/components/Statistics";
 import Pillars from "@/components/Pillars";
+import Products from "@/components/Products";
 
 const dmsans = DM_Sans({
-  weight: ["100","200", "300","400", "500", "600", "700", "800"],
+	weight: ["100", "200", "300", "400", "500", "600", "700", "800"],
 	subsets: ["latin"],
 })
 
 
 export default function Home() {
-  return (
+	return (
 		<main
 			className={`${dmsans.className} flex flex-col items-center max-w-screen h-full text-white tracking-tight relative`}
 		>
 			<Header />
 			<Landing />
-      <Statistics/>
-      <Mission/>
-      <Footer/>
+			<Statistics />
+			<Products />
+			<Mission />
+			<Footer />
 		</main>
 	);
 }
