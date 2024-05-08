@@ -1,53 +1,69 @@
-"use client"
-import React, { useRef, useState } from 'react'
-import { CircleStackIcon, CheckIcon } from '@heroicons/react/24/outline'
-import Flame from '@/components/utils/Flame';
-import Pot from '@/components/utils/Pot';
+"use client";
+import React, { RefObject, useRef, useState } from "react";
+import { CircleStackIcon, CheckIcon } from "@heroicons/react/24/outline";
+import Flame from "@/components/utils/Flame";
+import Pot from "@/components/utils/Pot";
 
-export default function ProductCard() {
-    const cardsRef = useRef<HTMLElement>(null)
-    const [cursor, setCursor] = useState({ x: 0, y: 0 })
-    const [mouseOnCard, setMouseOnCard] = useState(false)
-    const handleMouseMove = (event: React.MouseEvent<HTMLElement, MouseEvent>) => {
-        if (cardsRef.current !== null) {
-            const rect = cardsRef.current.getBoundingClientRect()
-            const x = event.clientX - rect.left
-            const y = event.clientY - rect.top
-            setCursor({ x, y })
-        }
-    }
-    return (
-        <section className="card" ref={cardsRef} onMouseEnter={() => setMouseOnCard(true)} onMouseLeave={() => setMouseOnCard(false)} onMouseMove={event => handleMouseMove(event)}>
-            <div className="flex flex-col w-2/5 justify-between">
-                <div className="flex flex-col gap-5">
-                    <CircleStackIcon className='w-14 rounded-lg bg-neutral-950/70 stroke-emerald-500 p-2 shadow-inner ' />
-                    <h1 className='font-poppins text-neutral-200 tracking-wide text-2xl'>
-                        Cooking Solutions
-                    </h1>
-                    <p className='-mt-2 font-poppins text-neutral-500 tracking-wide'>
-                        Improved cookstoves
-                    </p>
+type Item = string;
 
-                </div>
-                <div className="flex flex-col font-poppins text-neutral-200 tracking-wide">
-                    <span className='flex flex-row gap-2'>
-                        <CheckIcon className="w-5" />
-                        Gasifiers
-                    </span>
-                    <span className='flex flex-row gap-2'>
-                        <CheckIcon className="w-5" />
-                        Briquettes
-                    </span>
-                    <span className='flex flex-row gap-2'>
-                        <CheckIcon className="w-5" />
-                        E-cooking
-                    </span>
+type ProductCardProps = {
+	title: string;
+	items: Item[];
+	reff: RefObject<HTMLElement>;
+	key: string | number;
+};
 
-                </div>
-            </div>
-            <div className='w-3/5 flex flex-col place-content-center'>
-                <Flame cursor={cursor} cardRef={cardsRef} mouseOnCard={mouseOnCard} />
-            </div>
-        </section>
-    )
+export default function ProductCard({ title, items, reff }: ProductCardProps) {
+	const cardsRef = reff;
+	const [cursor, setCursor] = useState({ x: 0, y: 0 });
+	const [mouseOnCard, setMouseOnCard] = useState(false);
+	const handleMouseMove = (
+		event: React.MouseEvent<HTMLElement, MouseEvent>
+	) => {
+		if (cardsRef.current !== null) {
+			const rect = cardsRef.current.getBoundingClientRect();
+			const x = event.clientX - rect.left;
+			const y = event.clientY - rect.top;
+			setCursor({ x, y });
+		}
+	};
+	return (
+		<section
+			className="w-full flex p-5 bg-neutral-950 hover:bg-neutral-950/90 rounded-xl"
+			ref={cardsRef}
+			onMouseEnter={() => setMouseOnCard(true)}
+			onMouseLeave={() => setMouseOnCard(false)}
+			onMouseMove={(event) => handleMouseMove(event)}
+		>
+			<div className="flex flex-col w-full justify-between ">
+				<div className="flex flex-col gap-5">
+					<CircleStackIcon className="w-14 rounded-lg bg-neutral-950/70 stroke-emerald-500 p-2 shadow-inner " />
+					<h1 className="font-poppins text-neutral-200 tracking-wide text-md font-bold">
+						{title}
+					</h1>
+					<p className="m-2 font-poppins text-neutral-400 tracking-wide text-sm">
+						Improved cookstoves
+					</p>
+				</div>
+				<div className="flex flex-col font-poppins text-neutral-200 tracking-wide gap-2">
+					{items.map((item, index) => (
+						<span
+							key={index}
+							className="flex flex-row gap-2 text-sm"
+						>
+							<CheckIcon className="w-5" />
+							{item}
+						</span>
+					))}
+				</div>
+			</div>
+			<div className=" flex items-center justify-center ">
+				<Pot
+					cursor={cursor}
+					cardRef={cardsRef}
+					mouseOnCard={mouseOnCard}
+				/>
+			</div>
+		</section>
+	);
 }
