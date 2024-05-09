@@ -1,27 +1,16 @@
-"use client";
 import React, { useEffect } from "react";
-import Glide from "@glidejs/glide/dist/glide.modular.esm";
+import { Card, CardContent } from "@/components/ui/card";
+import {
+	Carousel,
+	CarouselContent,
+	CarouselItem,
+	CarouselNext,
+	CarouselPrevious,
+} from "@/components/ui/carousel";
+import Image from "next/image";
 
+const imagePaths = ["/logo.png", "/kirdi.png", "/logo.png", "/kirdi.png",'/logo.png', '/kirdi.png',];
 export default function Projects() {
-	useEffect(() => {
-		setTimeout(() => {
-			var glide = new Glide("#intro", {
-				type: "carousel",
-				perView: 4,
-				focusAt: "center",
-				breakpoints: {
-					800: {
-						perView: 2,
-					},
-					480: {
-						perView: 1,
-					},
-				},
-			});
-
-			glide.mount();
-		}, 0);
-	}, []);
 
 	return (
 		<div className="text-neutral-900 h-screen p-10 lg:p-20 flex flex-col">
@@ -32,64 +21,36 @@ export default function Projects() {
 				CLEAN COOKING SOLUTION FOR JOYFUL WOMEN TABLE BANKING ORGANIZATION WITH
 				MAMA DOING GOOD
 			</p>
-			{/* <div
-				id="intro"
-				className=""
-			>
-				<div className="glide">
-					<div
-						className="glide__track h-[50vh]"
-						data-glide-el="track"
-					>
-						<ul className="gap-10  glide__slides">
-							<li className="glide__slide w-1/3 h-[50vh] bg-blue-200 m-10">
-								0
-							</li>
-							<li className="glide__slide w-1/3 h-[50vh] bg-blue-100 m-10">
-								1
-							</li>
-							<li className="glide__slide w-1/3 h-[50vh] bg-blue-500 m-10">
-								2
-							</li>
-							<li className="glide__slide w-1/3 h-[50vh] bg-blue-800 m-10">
-								0
-							</li>
-							<li className="glide__slide w-1/3 h-[50vh] bg-blue-200 m-10">
-								1
-							</li>
-							<li className="glide__slide w-1/3 h-[50vh] bg-blue-200 m-10">
-								2
-							</li>
-							<li className="glide__slide w-1/3 h-[50vh] bg-blue-200 m-10">
-								0
-							</li>
-							<li className="glide__slide w-1/3 h-[50vh] bg-blue-200 m-10">
-								1
-							</li>
-							<li className="glide__slide w-1/3 h-[50vh] bg-blue-200 m-10">
-								2
-							</li>
-						</ul>
-					</div>
-					<div
-						className="glide__arrows"
-						data-glide-el="controls"
-					>
-						<button
-							className="glide__arrow glide__arrow--left"
-							data-glide-dir="<"
-						>
-							prev
-						</button>
-						<button
-							className="glide__arrow glide__arrow--right"
-							data-glide-dir=">"
-						>
-							next
-						</button>
-					</div>
-				</div>
-			</div> */}
+
+			<div className="w-full h-full">
+				<Carousel className="w-full">
+					<CarouselContent className="-ml-1">
+						{imagePaths.map((path, index) => (
+							<CarouselItem
+								key={index}
+								className="pl-1 md:basis-1/2 lg:basis-1/3"
+							>
+								<div className="p-1">
+									<Card>
+										<CardContent className="flex aspect-square items-center justify-center p-6">
+											<div className='relative w-96 h-48'>
+												<Image
+												src={path}
+												alt='carousel projects'
+												fill={true}
+												style={{objectFit: 'contain'}}
+												/>
+											</div>
+										</CardContent>
+									</Card>
+								</div>
+							</CarouselItem>
+						))}
+					</CarouselContent>
+					<CarouselPrevious />
+					<CarouselNext />
+				</Carousel>
+			</div>
 
 			<div className="flex gap-10">
 				<div className="p-5 bg-neutral-200 rounded-xl w-full lg:w-1/3 ">

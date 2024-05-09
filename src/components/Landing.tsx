@@ -5,14 +5,14 @@ import React from 'react'
 export default function Landing() {
   return (
 		<div className="h-screen w-full relative text-[#265853]">
-			{/* <div className="h-full w-full relative filter brightness-[30%]">
+			<div className="h-1/3 w-1/3 relative">
 				<Image
-					src="/forest.jpg"
+					src="/earth.png"
 					alt="forest photography"
 					fill={true}
 					style={{ objectFit: "cover" }}
 				/>
-			</div> */}
+			</div>
 			<div className="bg-[#FCF0E7] absolute top-0 w-1/2 h-screen rounded-br-3xl"></div>
 			<div className="w-full flex flex-col lg:flex-row gap-5 justify-between absolute top-[25%] px-10">
 				<div className="w-full flex flex-col gap-1">
