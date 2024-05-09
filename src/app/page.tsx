@@ -6,7 +6,7 @@ import Mission from "@/components/Mission";
 import Footer from "@/components/Footer";
 import Statistics from "@/components/Statistics";
 import Pillars from "@/components/Pillars";
-import Products from "@/components/Products";
+import Products, { CarouselSection } from "@/components/Products";
 import Projects from "@/components/Projects";
 import AboutUs from "@/components/AboutUs";
 import Partners from "@/components/Partners";
@@ -27,9 +27,10 @@ export default function Home() {
 			<Statistics />
 			{/* <Projects/> */}
 			<Products />
-			<AboutUs/>
+			<CarouselSection />
+			<AboutUs />
 			<Mission />
-			<Partners/>
+			<Partners />
 			<Footer />
 		</main>
 	);

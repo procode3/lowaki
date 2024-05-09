@@ -1,6 +1,7 @@
 'use client'
 import React, { useRef, useEffect, createRef } from "react";
 import ProductCard from "./ui/productCard";
+import ProductCarousel from "./ui/productCarousel";
 
 const cardsData = [
 	{
@@ -43,4 +44,26 @@ export default function Products() {
 			</div>
 		</div>
 	);
+}
+
+
+
+
+export function CarouselSection() {
+
+	const DATA = [{ image: "https://picsum.photos/seed/random101/500/500" },
+	{ image: "https://picsum.photos/seed/random102/500/500" },
+	{ image: "https://picsum.photos/seed/random103/500/500" }]
+	return (
+		<div className="flex flex-col items-center justify-center gap-5 p-10 lg:p-20">
+			<h1 className="text-[#265853] text-start w-full text-[8vw] md:text-[6vw] lg:text-[4.3vw]">
+				Improved <span className="font-bold">Cook Stoves</span>
+			</h1>
+
+			<ProductCarousel
+				data={DATA}
+			/>
+		</div>
+	);
+
 }
