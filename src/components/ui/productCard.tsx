@@ -58,7 +58,7 @@ export default function ProductCard({ title, items, reff }: ProductCardProps) {
 				</div>
 			</div>
 			<div className=" flex items-center justify-center ">
-				<Pot
+				<Flame
 					cursor={cursor}
 					cardRef={cardsRef}
 					mouseOnCard={mouseOnCard}
