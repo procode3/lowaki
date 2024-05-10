@@ -10,34 +10,34 @@ export function CarouselSection() {
 
 	const stoves = [
 		{
+			name: "Jiko Kisasa",
 			images: [
 				"https://picsum.photos/seed/random101/500/500",
 				"https://picsum.photos/seed/random102/500/500",
 				"https://picsum.photos/seed/random103/500/500",
 			],
-			name: "Jiko Kisasa",
 			description:
 				"Saves over 60% of fuel. Over 50% smoke reduction. Made with a mix of clay & rice husks High temperature thermal insulation. Made of stainless steel.",
 			fuel: ["Charcoal", "Firewood", "Briquettes"],
 		},
 		{
-			images: [
-				"https://picsum.photos/seed/random101/500/500",
-				"https://picsum.photos/seed/random102/500/500",
-				"https://picsum.photos/seed/random103/500/500",
-			],
 			name: "Portable Rocket Stove",
+			images: [
+				"/1.jpg",
+				"/2.jpg",
+				"/3.jpg",
+			],
 			description:
 				"Saves over 60% of fuel. Over 50% smoke reduction. Made with a mix of clay & rice husks High temperature thermal insulation. Made of stainless steel.",
-			fuel: [ "Firewood",],
+			fuel: ["Firewood",],
 		},
 		{
+			name: "Gasifier",
 			images: [
 				"https://picsum.photos/seed/random101/500/500",
 				"https://picsum.photos/seed/random102/500/500",
 				"https://picsum.photos/seed/random103/500/500",
 			],
-			name: "Gasifier",
 			description:
 				"Saves over 75% of fuel. No forced draft needed. Over 60% smoke reduction. Made of stainless steel. High temperature thermal insulation. Made of stainless steel. ",
 			fuel: ["Firewood", "Briquettes"],
@@ -55,14 +55,14 @@ export function CarouselSection() {
 							key={i}
 							data={v}
 						/>
-                        <div className='flex flex-col gap-3'>
-                            <h3 className="text-[24px] font-bold">{v.name}</h3>
-                            <p>{v.description}</p>
-                            <div>
-                                <h4>Fuel</h4>
-                                {v.fuel.join(" | ")}
-                            </div>
-                        </div>
+						<div className='flex flex-col gap-3'>
+							<h3 className="text-[24px] font-bold">{v.name}</h3>
+							<p>{v.description}</p>
+							<div>
+								<h4>Fuel</h4>
+								{v.fuel.join(" | ")}
+							</div>
+						</div>
 					</div>
 				))}
 			</div>

@@ -49,6 +49,7 @@ const ProductCarousel = ({ data }: {
                             className="pointer-events-none"
                             alt={`carousel-image-${i}`}
                             fill
+                            style={{ objectFit: "contain" }}
                             src={v || "https://random.imagecdn.app/500/500"}
 
 
