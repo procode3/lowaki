@@ -22,7 +22,7 @@ const Pot = ({ cursor, cardRef, mouseOnCard }: Props) => {
     return (
 
         <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
-            width="300.000000pt" height="264.000000pt" viewBox="0 0 300.000000 264.000000"
+            width="200.000000pt" height="200.000000pt" viewBox="0 0 300.000000 264.000000"
             preserveAspectRatio="xMidYMid meet">
             <defs>
                 <radialGradient

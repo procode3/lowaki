@@ -13,13 +13,12 @@ const imagePaths = ["/logo.png", "/kirdi.png", "/logo.png", "/kirdi.png",'/logo.
 export default function Projects() {
 
 	return (
-		<div className="text-neutral-900 h-screen p-10 lg:p-20 flex flex-col">
+		<div className="text-neutral-900 h-full p-10 lg:p-20 flex flex-col">
 			<h2 className="text-[#265853] text-[8vw] md:text-[6vw] lg:text-[4.3vw] font-bold">
 				Current Projects
 			</h2>
 			<p className="text-xl w-full text-center capitalize">
-				CLEAN COOKING SOLUTION FOR JOYFUL WOMEN TABLE BANKING ORGANIZATION WITH
-				MAMA DOING GOOD
+				
 			</p>
 
 			<div className="w-full h-full">

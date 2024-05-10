@@ -17,8 +17,8 @@ export default function Partners() {
 				women, promoting clean energy solutions, and fostering sustainable
 				development.
 			</p>
-			<div className='flex w-full justify-evenly mt-5'>
-				<div className="w-[250px] h-[100px] relative">
+			<div className="grid grid-cols-2 lg:grid-cols-4 gap-3 mt-5">
+				<div className="w-[100px]/[250px] h-[100px] relative">
 					<Image
 						src="/mamagood.png"
 						fill={true}
@@ -26,7 +26,7 @@ export default function Partners() {
 						style={{ objectFit: "contain" }}
 					/>
 				</div>
-				<div className="w-[100px] h-[100px] relative">
+				<div className="w-[100px]/[250px] h-[100px] relative">
 					<Image
 						src="/ccak.png"
 						fill={true}
@@ -34,7 +34,7 @@ export default function Partners() {
 						style={{ objectFit: "contain" }}
 					/>
 				</div>
-				<div className="w-[100px] h-[100px] relative">
+				<div className="w-[100px]/[250px] h-[100px] relative">
 					<Image
 						src="/govkenya.png"
 						fill={true}
@@ -42,7 +42,7 @@ export default function Partners() {
 						style={{ objectFit: "contain" }}
 					/>
 				</div>
-				<div className="w-[100px] h-[100px] relative">
+				<div className="w-[100px]/[250px] h-[100px] relative">
 					<Image
 						src="/kirdi.png"
 						fill={true}

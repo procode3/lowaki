@@ -26,9 +26,11 @@ export default function Home() {
 			<div className="flex flex-col max-w-[1500px] w-full">
 				<Landing />
 				<Statistics />
-				<Projects/>
 				<Products />
+				<Projects/>
+				{/* 
 				<CarouselSection/>
+			*/}
 				<AboutUs />
 				<Mission />
 				<Partners />

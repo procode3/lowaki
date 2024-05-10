@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import Link from 'next/link';
 import React from 'react'
+import { Button } from './ui/button';
 
 export default function Landing() {
   return (
@@ -13,10 +14,10 @@ export default function Landing() {
 					style={{ objectFit: "cover" }}
 				/>
 			</div>
-			<div className="bg-[#FCF0E7] absolute top-0 w-1/2 h-screen rounded-br-3xl"></div>
+			<div className="bg-[#FCF0E7] absolute top-0 w-full lg:w-1/2 h-1/2 lg:h-screen rounded-br-3xl"></div>
 			<div className="w-full flex flex-col lg:flex-row gap-5 justify-between absolute top-[25%] px-10">
 				<div className="w-full flex flex-col gap-1">
-					<h1 className="text-[8vw] md:text-[6vw] lg:text-[4.3vw] leading-tight tracking-tight w-full">
+					<h1 className="text-[8vw] md:text-[6vw] lg:text-[4.3vw] leading-tight tracking-tighter w-full">
 						The greatest <span className="font-extrabold">threat</span> to our{" "}
 						<span className="font-extrabold">planet</span> is the belief that
 						<span className="font-extrabold"> someone</span> else{" "}
@@ -35,14 +36,14 @@ export default function Landing() {
 						A small thing that you can do, can go a long way into saving the
 						world
 					</p>
-					<div className="flex my-6 gap-5">
+					<Button>
 						<Link
-							href="/register"
-							className="bg-green-700 px-3 py-2 rounded-lg max-w-[150px] text-sm text-center text-neutral-100 hover:text-white font-semibold"
+							href="#"
+							className="font-semibold"
 						>
-							Contact Us
+							Get Started
 						</Link>
-					</div>
+					</Button>
 				</div>
 			</div>
 		</div>

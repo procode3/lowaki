@@ -13,7 +13,7 @@ export default function Pillars() {
 			<h1 className="text-[#265853] text-start w-full text-[8vw] md:text-[6vw] lg:text-[4.3vw]">
 				Our <span className="font-bold">Pillars</span>
 			</h1>
-			<div className='flex items-center gap-5'>
+			<div className='flex flex-col-reverse sm:flex-row-reverse lg:flex-row items-center gap-7'>
 				<div className="flex flex-col   w-full lg:w-1/2 ">
 					<p>
 						Lowaki Eco-Solutions is a female-led organization that aggregates
