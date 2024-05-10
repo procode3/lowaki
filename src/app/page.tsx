@@ -11,9 +11,10 @@ import Projects from "@/components/Projects";
 import AboutUs from "@/components/AboutUs";
 import Partners from "@/components/Partners";
 import { CarouselSection } from "@/components/CarouselSection";
+import { Manrope } from "next/font/google";
 
-const dmsans = DM_Sans({
-	weight: ["100", "200", "300", "400", "500", "600", "700", "800"],
+const dmsans = Manrope({
+	weight: ["200", "300", "400", "500", "600", "700", "800"],
 	subsets: ["latin"],
 });
 

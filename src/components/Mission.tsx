@@ -32,31 +32,31 @@ export default function Mission() {
 			<div className="flex flex-col md:flex-row w-full items-start gap-2 ">
 				<motion.p
 					ref={intro}
-					className="text-[4vw] md:text-[30px] text-start w-full md:w-1/3 leading-tight text-neutral-700 md:py-0 "
+					className="text-[4vw] md:text-[30px] text-start font-semibold  w-full md:w-1/3 leading-tighter text-[#265853] md:py-0 "
 					// style={{ opacity: scrollYProgress }}
 				>
 					Our Vision
 				</motion.p>
 				<motion.p
 					ref={intro}
-					className="flex flex-wrap text-[24px] w-full leading-tight text-neutral-900 md:py-0 "
+					className="flex flex-wrap  w-full text-neutral-900 md:py-0 "
 				>
-					To be Sub-Saharan Africa&apos;s top green solutions aggregator, providing
-					accessible, innovative clean energy solutions that empower
+					To be Sub-Saharan Africa&apos;s top green solutions aggregator,
+					providing accessible, innovative clean energy solutions that empower
 					communities.
 				</motion.p>
 			</div>
 			<div className="flex flex-col md:flex-row w-full items-start gap-2 ">
 				<motion.p
 					ref={intro}
-					className="text-[4vw] md:text-[30px] text-start w-full md:w-1/3 leading-tight text-neutral-700 md:py-0 "
+					className="text-[#265853] text-[4vw] md:text-[30px] text-start w-full md:w-1/3 font-semibold leading-tighter  md:py-0 "
 					// style={{ opacity: scrollYProgress }}
 				>
 					Our Mission
 				</motion.p>
 				<motion.p
 					ref={intro}
-					className="flex flex-wrap text-[24px] w-full leading-tight text-neutral-900 md:py-0 "
+					className="flex flex-wrap text-neutral-700  w-full  md:py-0 "
 				>
 					{mission}
 				</motion.p>

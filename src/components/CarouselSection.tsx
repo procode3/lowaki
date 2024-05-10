@@ -60,7 +60,7 @@ export function CarouselSection() {
 						/>
 						<div className="flex flex-col gap-3">
 							<h3 className="text-[24px] font-bold">{v.name}</h3>
-							<p className="tracking-tight ">{v.description}</p>
+							<p className="tracking-tight text-neutral-700 ">{v.description}</p>
 							<div className="flex gap-5">
 								<h4 className="font-semibold">Fuel:</h4>
 								{v.fuel.join(" | ")}
