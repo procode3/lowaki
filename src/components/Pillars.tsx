@@ -10,7 +10,7 @@ import {
 export default function Pillars() {
 	return (
 		<div className="text-neutral-900  flex flex-col w-full h-full items-center justify-center gap-5 py-10">
-			<h1 className="text-[#265853] text-start w-full text-[8vw] md:text-[6vw] lg:text-[4.3vw]">
+			<h1 className="text-[#265853] text-start w-full text-2xl md:text-3xl lg:text-[54px]">
 				Our <span className="font-bold">Pillars</span>
 			</h1>
 			<div className='flex flex-col-reverse sm:flex-row-reverse lg:flex-row items-center gap-7'>

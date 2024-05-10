@@ -4,7 +4,7 @@ import React from 'react'
 export default function Partners() {
   return (
 		<div className="text-neutral-900 p-10 lg:p-20 h-full w-full text-center flex flex-col gap-2 text-base">
-			<h2 className="text-[#265853] text-3xl">
+			<h2 className="text-[#265853] text-2xl md:text-3xl lg:text-[54px]">
 				Meet Our{" "}
 				<span className="text-[#265853] text-4xl font-bold">Partners</span>
 			</h2>

@@ -20,16 +20,16 @@ const dmsans = DM_Sans({
 export default function Home() {
 	return (
 		<main
-			className={`${dmsans.className}  max-w-screen flex flex-col items-center   h-full text-white tracking-tight relative`}
+			className={`${dmsans.className}  max-w-screen flex flex-col items-center overflow-x-hidden  h-full text-white tracking-tight relative`}
 		>
 			<Header />
-			<div className="flex flex-col max-w-[1500px] w-full">
 				<Landing />
+			<div className="flex flex-col max-w-[1500px] w-full">
 				<Statistics />
-				<Products />
 				<Projects/>
-				{/* 
+				<Products />
 				<CarouselSection/>
+				{/* 
 			*/}
 				<AboutUs />
 				<Mission />

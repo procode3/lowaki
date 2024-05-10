@@ -5,7 +5,7 @@ import { Button } from "./ui/button";
 
 export default function Header() {
 	return (
-		<div className="fixed top-0 w-full flex items-center justify-between h-[70px] px-10  text-neutral-900 bg-white z-10">
+		<div className="fixed top-0 w-full flex items-center justify-between h-[70px] px-10  text-neutral-900 bg-white z-20">
 			<div className="flex gap-5 items-center">
 				<div className="logo h-[50px] w-[50px] relative ">
 					<Image
@@ -29,6 +29,18 @@ export default function Header() {
 					href="#"
 					className="home mr-10 text-sm font-medium filter "
 				>
+					Products
+				</Link>
+				<Link
+					href="#"
+					className="home mr-10 text-sm font-medium filter "
+				>
+					Projects
+				</Link>
+				<Link
+					href="#"
+					className="home mr-10 text-sm font-medium filter "
+				>
 					About Us
 				</Link>
 				<Link
@@ -37,26 +49,9 @@ export default function Header() {
 				>
 					Partners
 				</Link>
-				<Link
-					href="#"
-					className="home mr-10 text-sm font-medium filter "
-				>
-					Program
-				</Link>
-				<Link
-					href="#"
-					className="home mr-10 text-sm font-medium filter "
-				>
-					Gallery
-				</Link>
-				<Link
-					href="#"
-					className="home mr-10 text-sm font-medium filter "
-				>
-					Contact
-				</Link>
+				
 			</div>
-			<Button>
+			<Button className="font-semibold bg-[#265853]">
 				<Link
 					href="#"
 					className="font-semibold"
