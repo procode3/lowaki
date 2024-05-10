@@ -14,7 +14,7 @@ const imagePaths = ["/logo.png", "/kirdi.png", "/logo.png", "/kirdi.png", '/logo
 export default function Projects() {
 
 	return (
-		<div className="text-neutral-900 h-screen p-10 lg:p-20 flex flex-col gap-10">
+		<div className="text-neutral-900 h-full p-10 lg:p-20 flex flex-col gap-10">
 			<h2 className="text-[#265853] text-[8vw] md:text-[6vw] lg:text-[4.3vw] font-bold">
 				Current Projects
 			</h2>

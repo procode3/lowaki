@@ -2,6 +2,13 @@
 "use client";
 import Image from "next/image";
 import React, { useEffect, useRef, useState } from "react";
+import {
+    Carousel,
+    CarouselContent,
+    CarouselItem,
+    CarouselNext,
+    CarouselPrevious,
+} from "@/components/ui/carousel"
 
 const ProductCarousel = ({ data }: {
     data: {
@@ -17,69 +24,102 @@ const ProductCarousel = ({ data }: {
     const carouselRef = useRef(null);
 
     // useEffect to get the initial carousel size
-    useEffect(() => {
-        let elem = carouselRef.current as unknown as HTMLDivElement;
-        let { width, height } = elem.getBoundingClientRect();
-        if (carouselRef.current) {
-            setCarouselSize({
-                width,
-                height,
-            });
-        }
-    }, []);
+    // useEffect(() => {
+    //     let elem = carouselRef.current as unknown as HTMLDivElement;
+    //     let { width, height } = elem.getBoundingClientRect();
+    //     if (carouselRef.current) {
+    //         setCarouselSize({
+    //             width,
+    //             height,
+    //         });
+    //     }
+    // }, []);
 
     return (
 
-        <div className="relative w-90 h-60 rounded-md overflow-hidden">
-            {/* Image container */}
-            <div
-                ref={carouselRef}
-                style={{
-                    left: -currentImg * carouselSize.width,
-                }}
-                className="w-full h-full absolute flex transition-all duration-300"
-            >
-                {/* Map through data to render images */}
+        // <div className="relative w-90 h-60 rounded-md overflow-hidden">
+        //     {/* Image container */}
+        //     <div
+        //         ref={carouselRef}
+        //         style={{
+        //             left: -currentImg * carouselSize.width,
+        //         }}
+        //         className="w-full h-full absolute flex transition-all duration-300"
+        //     >
+        //         {/* Map through data to render images */}
+        //         <Carousel>
+        //             <CarouselContent>
+        //                 {data.images.map((v, i) => (
+        //                     <CarouselItem key={i}>
+        //                         {/* <div
+        //                             key={i}
+        //                             className="relative shrink-0 w-80 h-full"
+        //                         > */}
+        //                         <Image
+        //                             className="pointer-events-none"
+        //                             alt={`carousel-image-${i}`}
+        //                             fill
+        //                             style={{ objectFit: "contain" }}
+        //                             src={v || "https://random.imagecdn.app/500/500"}
+
+
+
+        //                         />
+        //                         {/* </div> */}
+        //                     </CarouselItem>
+
+        //                 ))}
+        //             </CarouselContent>
+        //             <CarouselPrevious />
+        //             <CarouselNext />
+        //         </Carousel>
+
+        //     </div>
+
+        //     {/* Navigation buttons */}
+        //     <div className=" absolute flex justify-between w-full top-[40%]">
+        //         <button
+        //             disabled={currentImg === 0}
+        //             onClick={() => setCurrentImg((prev) => prev - 1)}
+        //             className={`border px-4 py-2 mx-2 font-bold text-black bg-white/50 rounded-full ${currentImg === 0 && "opacity-50"
+        //                 }`}
+        //         >
+        //             {"<"}
+        //         </button>
+        //         <button
+        //             disabled={currentImg === data.images.length - 1}
+        //             onClick={() => setCurrentImg((prev) => prev + 1)}
+        //             className={`border px-4 py-2 mx-2 font-bold text-black bg-white/50 rounded-full ${currentImg === data.images.length - 1 && "opacity-50"
+        //                 }`}
+        //         >
+        //             {">"}
+        //         </button>
+        //     </div>
+        // </div>
+        <Carousel>
+            <CarouselContent>
                 {data.images.map((v, i) => (
-                    <div
-                        key={i}
-                        className="relative shrink-0 w-80 h-full"
-                    >
-                        <Image
-                            className="pointer-events-none"
-                            alt={`carousel-image-${i}`}
-                            fill
-                            style={{ objectFit: "contain" }}
-                            src={v || "https://random.imagecdn.app/500/500"}
+                    <CarouselItem key={i}>
+                        <div
+                            key={i}
+                            className=" w-full h-48 bg-gray-200 relative shrink-0"
+                        >
+                            <Image
+                                className="pointer-events-none"
+                                alt={`carousel-image-${i}`}
+                                fill
+                                style={{ objectFit: "contain" }}
+                                src={v || "https://random.imagecdn.app/500/500"}
 
-
-
-                        />
-                    </div>
+                            />
+                        </div>
+                    </CarouselItem>
 
                 ))}
-            </div>
-
-            {/* Navigation buttons */}
-            <div className=" absolute flex justify-between w-full top-[40%]">
-                <button
-                    disabled={currentImg === 0}
-                    onClick={() => setCurrentImg((prev) => prev - 1)}
-                    className={`border px-4 py-2 mx-2 font-bold text-black bg-white/50 rounded-full ${currentImg === 0 && "opacity-50"
-                        }`}
-                >
-                    {"<"}
-                </button>
-                <button
-                    disabled={currentImg === data.images.length - 1}
-                    onClick={() => setCurrentImg((prev) => prev + 1)}
-                    className={`border px-4 py-2 mx-2 font-bold text-black bg-white/50 rounded-full ${currentImg === data.images.length - 1 && "opacity-50"
-                        }`}
-                >
-                    {">"}
-                </button>
-            </div>
-        </div>
+            </CarouselContent>
+            <CarouselPrevious />
+            <CarouselNext />
+        </Carousel>
 
     );
 };

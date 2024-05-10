@@ -26,7 +26,7 @@ export default function Products() {
 	const cardRefs = useRef(cardsData.map(() => createRef<HTMLElement>()));
 
 	return (
-		<div className=" px-20 text-neutral-900  flex flex-col w-full h-full items-center justify-center gap-5 p-10 lg:p-20">
+		<div className=" px-20 text-neutral-900  flex flex-col  w-full h-full items-center justify-center gap-5 p-10 lg:p-20">
 			<h1 className="text-[#265853] text-start w-full text-[8vw] md:text-[6vw] lg:text-[4.3vw]">
 				Our <span className="font-bold">Products</span>
 			</h1>

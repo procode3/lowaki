@@ -1,42 +1,91 @@
 import { cn } from "../lib/utils";
 import Marquee from "./ui/marquee";
+import Image from 'next/image';
 
 const reviews = [
     {
         name: "Jack",
         username: "@jack",
         body: "I've never seen anything like this before. It's amazing. I love it.",
-        img: "https://avatar.vercel.sh/jack",
+        img: "/DSC_0776.jpg",
     },
     {
         name: "Jill",
         username: "@jill",
         body: "I don't know what to say. I'm speechless. This is amazing.",
-        img: "https://avatar.vercel.sh/jill",
+        img: "/DSC_0781.jpg",
     },
     {
         name: "John",
         username: "@john",
         body: "I'm at a loss for words. This is amazing. I love it.",
-        img: "https://avatar.vercel.sh/john",
+        img: "/DSC_0796.jpg",
     },
     {
         name: "Jane",
         username: "@jane",
         body: "I'm at a loss for words. This is amazing. I love it.",
-        img: "https://avatar.vercel.sh/jane",
+        img: "/DSC_0800.jpg",
     },
     {
         name: "Jenny",
         username: "@jenny",
         body: "I'm at a loss for words. This is amazing. I love it.",
-        img: "https://avatar.vercel.sh/jenny",
+        img: "/DSC_0810.jpg",
     },
     {
         name: "James",
         username: "@james",
         body: "I'm at a loss for words. This is amazing. I love it.",
-        img: "https://avatar.vercel.sh/james",
+        img: "/DSC_0817.jpg",
+    },
+    {
+        name: "James",
+        username: "@james",
+        body: "I'm at a loss for words. This is amazing. I love it.",
+        img: "/DSC_0818.jpg",
+    },
+    {
+        name: "James",
+        username: "@james",
+        body: "I'm at a loss for words. This is amazing. I love it.",
+        img: "/DSC_0821.jpg",
+    },
+    {
+        name: "James",
+        username: "@james",
+        body: "I'm at a loss for words. This is amazing. I love it.",
+        img: "/DSC_0823.jpg",
+    },
+    {
+        name: "James",
+        username: "@james",
+        body: "I'm at a loss for words. This is amazing. I love it.",
+        img: "/DSC_0827.jpg",
+    },
+    {
+        name: "James",
+        username: "@james",
+        body: "I'm at a loss for words. This is amazing. I love it.",
+        img: "/DSC_0828.jpg",
+    },
+    {
+        name: "James",
+        username: "@james",
+        body: "I'm at a loss for words. This is amazing. I love it.",
+        img: "/DSC_0830.jpg",
+    },
+    {
+        name: "James",
+        username: "@james",
+        body: "I'm at a loss for words. This is amazing. I love it.",
+        img: "/DSC_0831.jpg",
+    },
+    {
+        name: "James",
+        username: "@james",
+        body: "I'm at a loss for words. This is amazing. I love it.",
+        img: "/DSC_0894.webp",
     },
 ];
 
@@ -64,16 +113,19 @@ const ReviewCard = ({
                 "dark:border-gray-50/[.1] dark:bg-gray-50/[.10] dark:hover:bg-gray-50/[.15]",
             )}
         >
-            <div className="flex flex-row items-center gap-2">
-                <img className="rounded-full" width="32" height="32" alt="" src={img} />
-                <div className="flex flex-col">
+            <div className="flex flex-row items-center gap-2 h-32 w-40">
+
+                <Image
+                    className="" fill
+                    alt="" src={img} />
+                {/* <div className="flex flex-col">
                     <figcaption className="text-sm font-medium dark:text-white">
                         {name}
                     </figcaption>
                     <p className="text-xs font-medium dark:text-white/40">{username}</p>
-                </div>
+                </div> */}
             </div>
-            <blockquote className="mt-2 text-sm">{body}</blockquote>
+            {/* <blockquote className="mt-2 text-sm">{body}</blockquote> */}
         </figure>
     );
 };
