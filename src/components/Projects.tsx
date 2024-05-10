@@ -8,12 +8,13 @@ import {
 	CarouselPrevious,
 } from "@/components/ui/carousel";
 import Image from "next/image";
+import MarqueeDemo from "./MarqueeDemo";
 
-const imagePaths = ["/logo.png", "/kirdi.png", "/logo.png", "/kirdi.png",'/logo.png', '/kirdi.png',];
+const imagePaths = ["/logo.png", "/kirdi.png", "/logo.png", "/kirdi.png", '/logo.png', '/kirdi.png',];
 export default function Projects() {
 
 	return (
-		<div className="text-neutral-900 h-screen p-10 lg:p-20 flex flex-col">
+		<div className="text-neutral-900 h-screen p-10 lg:p-20 flex flex-col gap-10">
 			<h2 className="text-[#265853] text-[8vw] md:text-[6vw] lg:text-[4.3vw] font-bold">
 				Current Projects
 			</h2>
@@ -23,7 +24,8 @@ export default function Projects() {
 			</p>
 
 			<div className="w-full h-full">
-				<Carousel className="w-full">
+				<MarqueeDemo />
+				{/* <Carousel className="w-full">
 					<CarouselContent className="-ml-1">
 						{imagePaths.map((path, index) => (
 							<CarouselItem
@@ -49,7 +51,7 @@ export default function Projects() {
 					</CarouselContent>
 					<CarouselPrevious />
 					<CarouselNext />
-				</Carousel>
+				</Carousel> */}
 			</div>
 
 			<div className="flex gap-10">
