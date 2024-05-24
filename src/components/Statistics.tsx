@@ -5,7 +5,7 @@ import NumberTicker from './ui/numberTicker';
 
 export default function Statistics() {
 	return (
-		<div className=" w-full flex flex-col  gap-2 p-10 lg:p-20">
+		<div className=" w-full flex flex-col  gap-2 p-10 lg:p-20"> cla
 			<div className="flex flex-col lg:flex-row justify-evenly gap-2">
 				<div className="w-full bg-[#EBEAEA] flex flex-col gap-1 p-5 rounded-lg">
 					<h1 className="text-[40px] font-bold text-[#265853]"><NumberTicker value={23000} /></h1>

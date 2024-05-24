@@ -5,7 +5,7 @@ import { Button } from "./ui/button";
 
 export default function Header() {
 	return (
-		<div className="fixed top-0 w-full flex items-center justify-between h-[70px] px-10  text-neutral-900 bg-white z-20">
+		<div className="fixed top-0 w-full flex items-center justify-between h-[70px] px-10 text-black  backdrop-blur-lg z-20">
 			<div className="flex gap-5 items-center">
 				<div className="logo h-[50px] w-[50px] relative ">
 					<Image
@@ -15,24 +15,24 @@ export default function Header() {
 						style={{ objectFit: "contain" }}
 					/>
 				</div>
-				<h1 className="text-sm lg:text-lg"> LOWAKI ECO-SOLUTIONS</h1>
+				<h1 className="text-sm lg:text-md"> LOWAKI ECO-SOLUTIONS</h1>
 			</div>
 
 			<div className="hidden lg:flex nav-links justify-center items-center ">
 				<Link
-					href="#"
+					href="/"
 					className="home mr-10 text-sm font-medium filter "
 				>
 					Home
 				</Link>
 				<Link
-					href="#"
+					href="/products"
 					className="home mr-10 text-sm font-medium filter "
 				>
 					Products
 				</Link>
 				<Link
-					href="#"
+					href="/"
 					className="home mr-10 text-sm font-medium filter "
 				>
 					Projects

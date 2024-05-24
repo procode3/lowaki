@@ -15,9 +15,9 @@ export default function Projects() {
 
 	return (
 		<div className="text-neutral-900 h-full p-10 lg:p-20 flex flex-col gap-10">
-			<h2 className="text-[#265853] text-2xl md:text-3xl lg:text-[54px] font-bold tracking-tighter">
+			{/* <h2 className="text-[#265853] text-2xl md:text-3xl lg:text-[54px] font-bold tracking-tighter">
 				Current Projects
-			</h2>
+			</h2> */}
 			<p className="text-xl w-full text-center capitalize"></p>
 
 			<div className="w-full h-full">

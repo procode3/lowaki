@@ -39,7 +39,7 @@ export default function Mission() {
 				</motion.p>
 				<motion.p
 					ref={intro}
-					className="flex flex-wrap  w-full text-neutral-900 md:py-0 "
+					className="flex flex-wrap text-[18px] w-full text-neutral-900 md:py-0 "
 				>
 					To be Sub-Saharan Africa&apos;s top green solutions aggregator,
 					providing accessible, innovative clean energy solutions that empower
@@ -56,7 +56,7 @@ export default function Mission() {
 				</motion.p>
 				<motion.p
 					ref={intro}
-					className="flex flex-wrap text-neutral-700  w-full  md:py-0 "
+					className="flex flex-wrap text-neutral-700 text-[18px] w-full  md:py-0 "
 				>
 					{mission}
 				</motion.p>

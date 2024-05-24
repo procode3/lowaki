@@ -12,6 +12,7 @@ import AboutUs from "@/components/AboutUs";
 import Partners from "@/components/Partners";
 import { CarouselSection } from "@/components/CarouselSection";
 import { Manrope } from "next/font/google";
+import Model from "@/components/Model";
 
 const dmsans = Manrope({
 	weight: ["200", "300", "400", "500", "600", "700", "800"],
@@ -23,15 +24,12 @@ export default function Home() {
 		<main
 			className={`${dmsans.className}  max-w-screen flex flex-col items-center overflow-x-hidden  h-full text-white tracking-tight relative`}
 		>
-			<Header />
 				<Landing />
 			<div className="flex flex-col max-w-[1500px] w-full">
-				<Statistics />
-				<Projects/>
-				<Products />
-				<CarouselSection/>
-				{/* 
-			*/}
+				<Pillars/>
+				<Model/>
+				{/* <Projects/> */}
+				<Products/>
 				<AboutUs />
 				<Mission />
 				<Partners />
