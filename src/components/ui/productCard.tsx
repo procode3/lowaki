@@ -5,6 +5,7 @@ import Flame from "@/components/utils/Flame";
 import Pot from "@/components/utils/Pot";
 import Image from "next/image";
 import { Button } from "./button";
+import Link from "next/link";
 
 type Item = string;
 
@@ -14,6 +15,7 @@ type ProductCardProps = {
 	reff: RefObject<HTMLElement>;
 	key: string | number;
 	src: string;
+	name: string;
 };
 
 export default function ProductCard({
@@ -21,6 +23,8 @@ export default function ProductCard({
 	items,
 	reff,
 	src,
+	key,
+	name
 }: ProductCardProps) {
 	const cardsRef = reff;
 	const [cursor, setCursor] = useState({ x: 0, y: 0 });
@@ -48,9 +52,9 @@ export default function ProductCard({
 					<div className="flex w-full items-center gap-5">
 						<div className="relative w-[50px] h-[50px]">
 							<Image
-							src='/globe.svg'
-							alt='globe of africa'
-							fill
+								src="/globe.svg"
+								alt="globe of africa"
+								fill
 							/>
 						</div>
 						{/* <CircleStackIcon className="w-14 rounded-lg bg-neutral-200/70 stroke-emerald-500 p-2 shadow-inner " /> */}
@@ -59,7 +63,7 @@ export default function ProductCard({
 						</h1>
 					</div>
 				</div>
-				<div className=" flex items-center justify-center px-10  w-full">
+				<div className=" flex items-center justify-center px-0 md:px-10  w-full">
 					<div className="flex flex-col w-full font-poppins text-neutral-700 tracking-wide gap-2">
 						{/* <p className="m-2 font-poppins text-neutral-300 text-sm md:text-md">
 						Improved cookstoves
@@ -67,7 +71,7 @@ export default function ProductCard({
 						{items.map((item, index) => (
 							<span
 								key={index}
-								className="flex flex-row gap-2 text-xs md:text-sm"
+								className="flex flex-row gap-2 text-xs md:text-[18px]"
 							>
 								<CheckIcon className="min-w-3 max-w-5" />
 								{item}
@@ -85,7 +89,11 @@ export default function ProductCard({
 					</div>
 				</div>
 			</section>
-			<Button className="bg-[#265853]">Visit Shop</Button>
+			<div className="w-full">
+				<Link href={`products/product/${name}`}>
+					<Button className="bg-[#265853] w-full">Visit Shop</Button>
+				</Link>
+			</div>
 		</div>
 	);
 }

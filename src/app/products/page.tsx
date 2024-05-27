@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export default function page() {
 	return (
-		<div className=" w-full text-black pt-14 p-5 md:p-10 lg:p-20 flex flex-col gap-10">
+		<div className=" w-full text-black bg-white pt-14 p-5 md:p-10 lg:p-20 flex flex-col gap-10">
 			<div className="w-full flex flex-col items-center justify-center">
 				<h1 className="text-xl md:text-2xl lg:text-[48px] w-full text-center  text-[#265853] tracking-tighter">
 					Our Products

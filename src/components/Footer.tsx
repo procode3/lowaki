@@ -10,7 +10,7 @@ export default function Footer() {
 			<div className="flex flex-col lg:flex-row gap-3 justify-between items-center py-10">
 				<div className="flex flex-col">
 					<h3 className="text-lg">Come, Join With Us!</h3>
-					<p className="text-xs md:text-sm font-light text-neutral-400">
+					<p className="text-[14px]  md:text-[18px] font-light text-neutral-200">
 						Be the first to know about our community updates iuncluding special
 						offers from our shop
 					</p>
@@ -32,7 +32,7 @@ export default function Footer() {
 			<div className="flex flex-col lg:flex-row gap-3 w-full justify-between ">
 				<div className="w-full ">
 					<h4 className="text-md font-semibold">Lowaki</h4>
-					<p className="text-xs md:text-sm font-light text-neutral-400">
+					<p className="text-[14px]  md:text-[18px] font-light text-neutral-200">
 						Lowaki is a ONE-STOP-SOLUTION platform <br /> for eco-solutions.
 						It&apos;s time to get started now!
 					</p>
@@ -40,43 +40,43 @@ export default function Footer() {
 				<div className="flex w-full gap-2">
 					<div className="flex flex-col gap-2 w-full">
 						<h4 className="text-md lg:text-lg font-semibold">Community</h4>
-						<p className="text-xs md:text-sm font-light text-neutral-400">
+						<p className="text-[14px]  md:text-[18px] font-light text-neutral-200">
 							Work Team
 						</p>
-						<p className="text-xs md:text-sm font-light text-neutral-400">
+						<p className="text-[14px]  md:text-[18px] font-light text-neutral-200">
 							Volunteers
 						</p>
-						<p className="text-xs md:text-sm font-light text-neutral-400">
+						<p className="text-[14px]  md:text-[18px] font-light text-neutral-200">
 							Speaker
 						</p>
-						<p className="text-xs md:text-sm font-light text-neutral-400">
+						<p className="text-[14px]  md:text-[18px] font-light text-neutral-200">
 							Recruitment
 						</p>
-						<p className="text-xs md:text-sm font-light text-neutral-400">
+						<p className="text-[14px]  md:text-[18px] font-light text-neutral-200">
 							Be a contributor
 						</p>
 					</div>
 					<div className="flex flex-col gap-2 w-full">
 						<h4 className="text-md lg:text-lg font-semibold">About Us</h4>
-						<p className="text-xs md:text-sm font-light text-neutral-400">
+						<p className="text-[14px]  md:text-[18px] font-light text-neutral-200">
 							Who are we
 						</p>
-						<p className="text-xs md:text-sm font-light text-neutral-400">
+						<p className="text-[14px]  md:text-[18px] font-light text-neutral-200">
 							Media
 						</p>
-						<p className="text-xs md:text-sm font-light text-neutral-400">
+						<p className="text-[14px]  md:text-[18px] font-light text-neutral-200">
 							Job
 						</p>
 					</div>
 					<div className="flex flex-col gap-2  w-full">
 						<h4 className="text-md lg:text-lg font-semibold">Contact</h4>
-						<p className="text-xs md:text-sm font-light text-neutral-400">
+						<p className="text-[14px]  md:text-[18px] font-light text-neutral-200">
 							+245 757 403 957
 						</p>
-						<p className="text-xs md:text-sm font-light text-neutral-400">
+						<p className="text-[14px]  md:text-[18px] font-light text-neutral-200">
 							info@lowakieco.com
 						</p>
-						<p className="text-xs md:text-sm font-light text-neutral-400">
+						<p className="text-[14px]  md:text-[18px] font-light text-neutral-200">
 							lowakieco.com
 						</p>
 					</div>

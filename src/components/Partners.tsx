@@ -8,11 +8,11 @@ export default function Partners() {
 				Meet Our{" "}
 				<span className="text-[#265853] text-4xl font-bold">Partners</span>
 			</h2>
-			<p>
+			<p className="text-[14px]  md:text-[18px]">
 				Together, we&apos;re forging impactful collaborations to drive positive
 				change.
 			</p>
-			<p>
+			<p className="text-[14px]  md:text-[18px]">
 				Our partners play a crucial role in advancing our mission of empowering
 				women, promoting clean energy solutions, and fostering sustainable
 				development.
