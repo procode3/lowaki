@@ -5,8 +5,8 @@ export default function Partners() {
   return (
 		<div className="text-neutral-900 p-10 lg:p-20 h-full w-full text-center flex flex-col gap-2 text-[18px]">
 			<h2 className="text-xl md:text-2xl lg:text-[48px] w-full text-center  text-[#265853] tracking-tighter">
-				Meet Our{" "}
-				<span className="text-[#265853] text-4xl font-bold">Partners</span>
+				Meet Our 
+				Partners
 			</h2>
 			<p className="text-[14px]  md:text-[18px]">
 				Together, we&apos;re forging impactful collaborations to drive positive

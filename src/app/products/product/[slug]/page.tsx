@@ -61,9 +61,9 @@ export default function Page({ params }: { params: { slug: string } }) {
 					<p className="font-medium text-[16px]">$200</p>
 					<p className="flex gap-2 text-[16px]">
 						Quantity
-						<span className="text-md px-2 border hover:bg-gray-200">+</span>
-						<span className="text-md px-3 border ">1</span>
 						<span className="text-md px-2 border hover:bg-gray-200">-</span>
+						<span className="text-md px-3 border ">1</span>
+						<span className="text-md px-2 border hover:bg-gray-200">+</span>
 					</p>
 					<div className="w-full flex gap-3 text-neutral-100">
 						<Button

@@ -1,11 +1,48 @@
-import React from 'react'
+import React from "react";
 
 export default function AboutUs() {
-  return (
+	return (
 		<div className="text-neutral-900 bg-white h-full flex flex-col gap-10 p-5 md:p-10 lg:p-20">
-			<h1 className="text-xl md:text-2xl lg:text-[48px] w-full text-center  text-[#265853] tracking-tighter">
-				Our Priority SDGs
-			</h1>
+			<div className="flex flex-col gap-7">
+				<h1 className="text-xl md:text-2xl lg:text-[48px] w-full text-center  text-[#265853] tracking-tighter">
+					Our Priority SDGs
+				</h1>
+				<div className="grid grid-cols-1 md:grid-cols-2 gap-5 tracking-wide">
+					<p className="p-5 bg-green-100 font-medium rounded-lg text-[16px] ">
+						
+						Our stoves reduces greenhouse gas emissions and helps combat
+						deforestation by saving on wood fuel therefore helps to manage
+						climate change
+					</p>
+					<p className="p-5 bg-green-100 font-medium rounded-lg text-[16px] ">
+						The use of our products contributes to significant savings on time
+						and money that can be utilized for other needs like education,
+						healthcare, and income-generating activities.
+					</p>
+					<p className="p-5 bg-green-100 font-medium rounded-lg text-[16px] ">
+						In Kenya 23,000 lives are lost due to Household air pollution. Our
+						stoves contribute to the reduction of indoor air pollution
+						significantly resulting in a decrease in respiratory diseases,
+						headaches, and eyes problems.
+					</p>
+					<p className="p-5 bg-green-100 font-medium rounded-lg text-[16px] ">
+						Lowaki is leaving no one behind by availing clean energy solutions
+						to all, reducing reliance on traditional biomass fuels, improving
+						health, promoting sustainable development, and mitigating climate
+						change.
+					</p>
+					<p className="p-5 bg-green-100 font-medium rounded-lg text-[16px] ">
+						We have established a sustainable business model that rewards women
+						las mile entrepreneurs for promoting and selling clean energy
+						products fostering economic growth.
+					</p>
+					<p className="p-5 bg-green-100 font-medium rounded-lg text-[16px] ">
+						Through Lowaki’s projects we shall collectively sustainably manage
+						combat desertification, halt and reverse land degradation, halt
+						biodiversity loss.
+					</p>
+				</div>
+			</div>
 
 			<div className="flex flex-col lg:flex-row items-center justify-center h-full gap-5 lg:gap-10 ">
 				<div className=" h-[40vh] md:h-[50vh] w-full lg:w-1/2 flex justify-between gap-2 md:gap-5 relative">

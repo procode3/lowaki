@@ -23,7 +23,6 @@ export default function ProductCard({
 	items,
 	reff,
 	src,
-	key,
 	name
 }: ProductCardProps) {
 	const cardsRef = reff;
@@ -91,7 +90,7 @@ export default function ProductCard({
 			</section>
 			<div className="w-full">
 				<Link href={`products/product/${name}`}>
-					<Button className="bg-[#265853] w-full">Visit Shop</Button>
+					<Button className="bg-[#265853] w-full">Shop</Button>
 				</Link>
 			</div>
 		</div>
